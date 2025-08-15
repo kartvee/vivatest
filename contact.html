@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Viva Academy</title>
+  <link rel="stylesheet" href="academy.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="brand-link" href="viva.html" aria-label="Viva Academy home">
+        <h1 class="brand-title" data-ka>Viva Academy</h1>
+        <h1 class="brand-title" data-en hidden>Viva Academy</h1>
+      </a>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <ul class="nav-list">
+        <li><a href="viva.html" data-ka>მთავარი</a><a href="viva.html" data-en hidden>Home</a></li>
+        <li><a href="programs.html" data-ka>კურსები</a><a href="programs.html" data-en hidden>Programs</a></li>
+        <li><a href="gallery.html" data-ka>გალერეა</a><a href="gallery.html" data-en hidden>Gallery</a></li>
+        <li><a href="about.html" data-ka>ჩვენს შესახებ</a><a href="about.html" data-en hidden>About us</a></li>
+        <li><a href="contact.html" data-ka>კონტაქტი</a><a href="contact.html" data-en hidden>Contact US</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch">
+      <button id="btn-ka" class="active">KA</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </header>
+
+  <main class="white-surface">
+    <section class="content-section contact">
+      <h2 data-ka>კონტაქტი</h2>
+      <h2 data-en hidden>Contact</h2>
+
+      <div class="contact-grid">
+        <form id="contactForm" class="contact-form">
+          <label>
+            <span data-ka>სახელი</span><span data-en hidden>Name</span>
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            <span data-ka>ელექტრონული ფოსტა</span><span data-en hidden>Email</span>
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            <span data-ka>შეტყობინება</span><span data-en hidden>Message</span>
+            <textarea name="message" rows="5"></textarea>
+          </label>
+
+          <button type="submit" class="btn" data-ka>გაგზავნა</button>
+          <button type="submit" class="btn" data-en hidden>Send</button>
+        </form>
+
+        <div id="map-wrapper">
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <p data-ka>მისამართი: Mose Toidze Street 12, Tbilisi, Georgia</p>
+      <p data-en hidden>Address: Mose Toidze Street 12, Tbilisi, Georgia</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="socials">
+      <span>© Viva Academy - <span id="year"></span></span>
+      <a href="https://www.facebook.com/profile.php?id=61566989541450" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/academy.vivat/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/viva-academy-%E1%83%95%E1%83%98%E1%83%95%E1%83%90-%E1%83%90%E1%83%99%E1%83%90%E1%83%93%E1%83%94%E1%83%9B%E1%83%98%E1%83%90/?viewAsMember=true" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="docendo.js"></script>
+  <!-- Replace YOUR_GOOGLE_MAPS_API_KEY with your key -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
+</body>
+</html>

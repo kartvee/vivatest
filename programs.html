@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viva Academy / კურსები</title>
+  <link rel="icon" href="potoebi/logo-png.png" type="image/png">
+  <link rel="stylesheet" href="academy.css">
+  <style>
+    /* Courses page specific */
+    main { 
+      min-height: calc(100vh - 80px); /* Reserve space for footer */
+      padding: 24px 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      background: var(--muted);
+    }
+
+    .course-card {
+      background: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(0,0,0,0.04);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .course-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .course-text {
+      padding: 12px;
+    }
+
+    .course-text h3 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+    }
+
+    .course-text p {
+      margin: 0 0 12px 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Sticky footer for Courses page */
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer.site-footer {
+      margin-top: auto;
+      padding: 18px;
+      text-align: center;
+      background: transparent;
+      color: var(--text-dark);
+      font-size: 14px;
+    }
+
+    footer.site-footer .socials a {
+      margin-left: 8px;
+      color: var(--darkblue);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer.site-footer .socials a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width:900px){
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <a class="brand-link" href="viva.html" aria-label="Viva Academy home">
+        <h1 class="brand-title" data-ka>Viva Academy</h1>
+        <h1 class="brand-title" data-en hidden>Viva Academy</h1>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="viva.html" data-ka>მთავარი</a><a href="viva.html" data-en hidden>Home</a></li>
+        <li><a href="courses.html" data-ka>კურსები</a><a href="courses.html" data-en hidden>Courses</a></li>
+        <li><a href="gallery.html" data-ka>გალერეა</a><a href="gallery.html" data-en hidden>Gallery</a></li>
+        <li><a href="about.html" data-ka>ჩვენს შესახებ</a><a href="about.html" data-en hidden>About us</a></li>
+        <li><a href="contact.html" data-ka>კონტაქტი</a><a href="contact.html" data-en hidden>Contact US</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switch">
+      <button id="btn-ka" class="active">GE</button>
+      <button id="btn-en">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="course-card">
+      <img src="potoebi/course1.jpg" alt="Course 1">
+      <div class="course-text">
+        <h3 data-ka>სამართალი</h3>
+        <h3 data-en hidden>Law</h3>
+        <p data-ka>ეს კურსი ასწავლის საერთაშორისო სამართლის საფუძვლებს...</p>
+        <p data-en hidden>This course teaches the fundamentals of International Law...</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="potoebi/course2.jpg" alt="Course 2">
+      <div class="course-text">
+        <h3 data-ka>საერთაშორისო ურთიერთობები</h3>
+        <h3 data-en hidden>International Relations</h3>
+        <p data-ka>გაიგეთ მსოფლიო პოლიტიკისა და საერთაშორისო ურთიერთობების...</p>
+        <p data-en hidden>Learn about global politics and international relations...</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="potoebi/course3.jpg" alt="Course 3">
+      <div class="course-text">
+        <h3 data-ka>პოლიტიკა</h3>
+        <h3 data-en hidden>Politics</h3>
+        <p data-ka>კურსი მოიცავს მართვის, ორგანიზების და პროექტების...</p>
+        <p data-en hidden>This course covers management, organization, and projects...</p>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="potoebi/course4.jpg" alt="Course 4">
+      <div class="course-text">
+        <h3 data-ka>ჟურნალისტიკა</h3>
+        <h3 data-en hidden>Journalism</h3>
+        <p data-ka>გაიგეთ როგორ მიაწოდოთ ინფორმაცია ეფექტურად...</p>
+        <p data-en hidden>Learn how to deliver information effectively...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=61566989541450" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/academy.vivat/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/company/viva-academy" target="_blank" rel="noopener">Linkedin</a>
+    </div>
+    <div class="legal">&copy; Viva Academy/ვივა აკადემია - 2025</div>
+  </footer>
+
+  <script src="docendo.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnKa = document.getElementById("btn-ka");
+      const btnEn = document.getElementById("btn-en");
+      const kaElements = document.querySelectorAll("[data-ka]");
+      const enElements = document.querySelectorAll("[data-en]");
+
+      let lang = localStorage.getItem("lang") || "ka";
+      switchLanguage(lang);
+
+      btnKa.addEventListener("click", () => switchLanguage("ka"));
+      btnEn.addEventListener("click", () => switchLanguage("en"));
+
+      function switchLanguage(l) {
+        lang = l;
+        localStorage.setItem("lang", l);
+
+        if (l === "ka") {
+          kaElements.forEach(el => el.hidden = false);
+          enElements.forEach(el => el.hidden = true);
+          btnKa.classList.add("active");
+          btnEn.classList.remove("active");
+        } else {
+          kaElements.forEach(el => el.hidden = true);
+          enElements.forEach(el => el.hidden = false);
+          btnKa.classList.remove("active");
+          btnEn.classList.add("active");
+        }
+      }
+    });
+  </script>
+</body>
+</html>
