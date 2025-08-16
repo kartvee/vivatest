@@ -102,7 +102,7 @@
             <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02EzArwxtTErVkHTWBVDD8J1x5dvgVJ5yUpuEFSADweq9DQnTXdaqCi24bzDS4nJPrl&id=61566989541450" class="read-more" data-ka>გაიგე მეტი</a>
             
           </div>
-        </article>
+        </article> 
       </div>
     </section>
   </main>
